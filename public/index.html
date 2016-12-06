@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head>
+ 
+
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<title>News Project</title>
+
+
+</head>
+
+<body ng-app="newsProject" ng-controller="MainCtrl">
+
+<div class="container">
+  <div class="row">
+     <div class="col-md-12">
+        <section class="hero">
+    <div class="col-lg-6 col-lg-offset-3">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="News Search Engine" ng-model="input">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-primary" type="button" ng-click="newsAPI()">Let's Go</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <img class="hero-image" src="http://logonoid.com/images/daily-news-logo.png">
+
+</section>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script> 
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="js/services/factory.js"></script>
+  <script src="js/controllers/mainController.js"></script>
+ 
+</body>
+</html>

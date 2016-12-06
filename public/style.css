@@ -1,0 +1,69 @@
+body {
+
+  margin: 0;
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+.hero-image {
+  width: 100%;
+  max-width: 593px;
+   display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  background: url(https://www.omnihotels.com/-/media/images/hotels/nycber/destinations/nyc-aerial-skyline.jpg?h=660&la=en&w=1170);
+  background-size: cover;
+  height: 700px;
+  padding-top: 250px;
+
+}
+
+
+/*h1 {
+  margin: 0;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  font-size: 25px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans';
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+
+section {
+  background-color: #ddd;
+}
+
+.column {
+ float: left;
+ width: 33.3%;
+}
+
+.livenews img {
+  width:100%;
+  height: 260px;
+  padding: 20px;
+}
+
+.column-inner {
+  padding:20px;
+}
+
+
+*/
+
+
