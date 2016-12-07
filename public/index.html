@@ -5,6 +5,8 @@
 
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script> 
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
 
 
 <title>News Project</title>
@@ -14,28 +16,45 @@
 
 <body ng-app="newsProject" ng-controller="MainCtrl">
 
-<div class="container">
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <section class="hero">
+            <div class="col-lg-6 col-lg-offset-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="News Search Engine" ng-model="input">
+              <span class="input-group-btn">
+              <button class="btn btn-default btn-primary" type="button" ng-click="newsAPI()">Let's Go</button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+          <img class="hero-image" src="http://logonoid.com/images/daily-news-logo.png">
+
+          </section>
+        </div>
+    </div>
+  </div>
+
   <div class="row">
-     <div class="col-md-12">
-        <section class="hero">
-    <div class="col-lg-6 col-lg-offset-3">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="News Search Engine" ng-model="input">
-      <span class="input-group-btn">
-        <button class="btn btn-default btn-primary" type="button" ng-click="newsAPI()">Let's Go</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <img class="hero-image" src="http://logonoid.com/images/daily-news-logo.png">
-
-</section>
-</div>
-</div>
-</div>
+    <div class="col-md-6 col-md-offset-3">
+      <div ng-repeat="article in articles track by $index">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>{{article.section}} {{article.subsection}} Section</h4>
+        </div>
+          <div class="panel-body">
+            
+            <h4>{{article.headline}}</h4>
+            <h5>{{article.snippet}}</h5>
 
 
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script> 
-<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="app.js"></script>
   <script src="js/services/factory.js"></script>
   <script src="js/controllers/mainController.js"></script>

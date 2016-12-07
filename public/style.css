@@ -5,7 +5,11 @@ body {
 }
 
 
+.panel-default > .panel-heading{
 
+  background-color: red;
+  border-color: red;
+}
 
 
 
