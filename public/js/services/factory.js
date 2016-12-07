@@ -3,7 +3,7 @@ app.factory('newsFactory', ['$http', function($http){
 var news = {
   articles:[],
 
-  query:function(data){
+  squery:function(data){
     // console.log(data);
     for(var i = 0; i<data.response.docs[i]; i++){
       console.log('got here');
