@@ -35,24 +35,24 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <div ng-repeat="article in articles track by $index">
-        <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>{{article.section}} {{article.subsection}} Section</h4>
-        </div>
-          <div class="panel-body">
-            
-            <h4>{{article.headline}}</h4>
-            <h5>{{article.snippet}}</h5>
-
-
+      <div class="row">
+        <div ng-repeat="article in articles track by $index">
+          <div class="clearfix" ng-if="$index % 3 == 0"></div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4>{{article.section}} {{article.subsection}} Section</h4>
+                </div>
+                <div class="panel-body">
+                
+                  <h4>{{article.headline}}</h4>
+                  <h5>{{article.snippet}}</h5>
+                  <a href="{{article.link}}" target="_blank">Full Article</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
   <script src="app.js"></script>
