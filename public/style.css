@@ -1,7 +1,11 @@
-body {
+  .navbar {
+    background-color: 
 
-  margin: 0;
-  background-color: #ddd;
+
+
+
+;
+    border-color: #030033;
 }
 
 
@@ -11,7 +15,10 @@ body {
   border-color: red;
 }
 
+.container {
 
+  width: 100%;
+}
 
 
 .hero-image {
@@ -25,8 +32,8 @@ body {
   background: url(https://www.omnihotels.com/-/media/images/hotels/nycber/destinations/nyc-aerial-skyline.jpg?h=660&la=en&w=1170);
   background-size: cover;
   height: 700px;
-  padding-top: 250px;
-
+/*  padding-top: 250px;
+*/
 }
 
 i {
@@ -74,5 +81,4 @@ section {
 
 
 */
-
 

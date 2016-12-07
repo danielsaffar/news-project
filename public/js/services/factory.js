@@ -9,5 +9,19 @@ news.create= function (article) {
   console.log(article);
 }
 
+news.getAll=function(){
+  return $http.get('/favorite').success(function (data) {
+  angular.copy(data, news.articles);
+  });
+};
+
+news.delete=function (id) {
+
+    return $http.delete('/favorite/' + id)
+    
+  };
+
+
+
 return news;
   }]);

@@ -2,6 +2,11 @@ app.controller('MainCtrl', ['$scope', 'newsFactory', function($scope, newsFactor
 
   $scope.articles = newsFactory.articles;
 
+  //  $scope.getAll = newsFactory.getAll().then(function(){
+  //   $scope.articles = newsFactory.articles;
+  //   console.log("hi from the controller");  
+  // });
+
     $scope.newsAPI = function(){
 
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
@@ -15,10 +20,12 @@ app.controller('MainCtrl', ['$scope', 'newsFactory', function($scope, newsFactor
     }).done(function(data) {
       // console.log(data);
       $scope.query(data);
+          $scope.$apply();
 
     }).fail(function(err) {
       throw err;
-    })       
+    }) 
+      
 
   };
 

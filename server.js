@@ -41,4 +41,23 @@ app.post('/favorite' , function (req,res,next) {
 
 });
 
+
+app.delete('/favorite/:id', function (req, res) {
+
+  
+  res.send('DELETE request to homepage');
+
+
+  Article.findByIdAndRemove(req.params.id, function(err) {
+    if (err) throw err;
+
+    // we have deleted the person
+    console.log('Article deleted!');
+  });
+
+    });
+
+
+
+
 app.listen(8000);
