@@ -27,7 +27,7 @@ app.controller('MainCtrl', ['$scope', 'newsFactory', function($scope, newsFactor
     for(var i = 0; i < data.response.docs.length; i++){
 
       var article = {
-        id:data.response.docs[i]._id,
+        // id:data.response.docs[i]._id,
         headline:data.response.docs[i].headline.main,
         // image:function(data){
         //   if(data.response.docs[i].multimedia[i].url){
@@ -45,6 +45,14 @@ app.controller('MainCtrl', ['$scope', 'newsFactory', function($scope, newsFactor
       $scope.articles.push(article);
     }
     // console.log($scope.articles);
+  }
+
+  $scope.addToFavorite= function (index)  {
+
+
+            
+
+            newsFactory.create($scope.articles[index])
   }
 
 
