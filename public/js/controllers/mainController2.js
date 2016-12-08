@@ -15,7 +15,6 @@ $scope.remove = function(index) {
   //invoke the $http delete in factory
   newsFactory.delete(articleId).success(function(response){
     //update the view
-    // $scope.beerArray.splice(index,1);
     newsFactory.getAll();
     console.log(response)
   });

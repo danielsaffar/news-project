@@ -1,25 +1,20 @@
-  .navbar {
-    background-color: 
-
-
-
-
-;
-    border-color: #030033;
-}
-
-
 .panel-default > .panel-heading{
-
-  background-color: red;
-  border-color: red;
+background-color: red;
+border-color: red;
 }
 
 .container {
-
-  width: 100%;
+width: 100%;
 }
 
+
+.favorite-img {
+    background: url(https://wallpaperscraft.com/image/city_buildings_sky_water_805_3840x2400.jpg);
+
+ background-size: cover;
+  height: 700px;
+
+}
 
 .hero-image {
   width: 100%;
@@ -32,53 +27,34 @@
   background: url(https://www.omnihotels.com/-/media/images/hotels/nycber/destinations/nyc-aerial-skyline.jpg?h=660&la=en&w=1170);
   background-size: cover;
   height: 700px;
-/*  padding-top: 250px;
-*/
 }
+
+
 
 i {
-
-  float: right;
+  color:white;
+float: right;
+}
+i:hover {
+  color:black;
 }
 
 
-/*h1 {
-  margin: 0;
-  font-family: 'Open Sans';
-  text-align: center;
-  font-weight: bold;
-  padding: 25px;
-  font-size: 25px;
+i:active {
+    color: yellow;
 }
 
-h3 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Open Sans';
-  margin-bottom: 5px;
-  font-size: 18px;
+i[tabindex]:focus {
+    color: #ffd11a
+;
+    outline: none;
 }
 
+i:visited {
+    color: green;
 
-section {
-  background-color: #ddd;
+h1 {
+font-family: 'Slabo 27px', serif;
 }
 
-.column {
- float: left;
- width: 33.3%;
-}
-
-.livenews img {
-  width:100%;
-  height: 260px;
-  padding: 20px;
-}
-
-.column-inner {
-  padding:20px;
-}
-
-
-*/
 

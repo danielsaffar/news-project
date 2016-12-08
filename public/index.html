@@ -19,41 +19,39 @@
 
 
 
-  <div class="container">
-    <div class="row">
-       <div class="col-md-12">
-          <section class="hero">
-            <div class="col-lg-6 col-lg-offset-3">
-
-
-<nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">News Project</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="http://www.nytimes.com/" target="_blank">Home</a></li>
-      <li><a href="favorite.html">My Favorite</a></li>
-      <li><a href="https://weather.com/" target="_blank">Weather Channel</a></li>
-      <li><a href="http://www.breakingnews.com/" target="_blank">Breaking News</a></li>
-    </ul>
-  </div>
-</nav>
+    <div class="row">
+        <div class="hero">
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">News Project</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li ><a href="http://www.nytimes.com/" target="_blank">Home</a></li>
+                  <li ><a href="favorite.html">My Favorites</a></li>
+                  <li><a href="https://weather.com/" target="_blank">Weather Channel</a></li>
+                  <li><a href="http://www.breakingnews.com/" target="_blank">Breaking News</a></li>
+                </ul>
+          
+          </div>
+            </nav>
+          <img class="hero-image" src="http://orig14.deviantart.net/375b/f/2016/105/8/b/daily_planet_logo_1932_prototype_by_noahlc-d9z1kuk.png"><br>
+          
+          <div class="col-md-6 col-md-offset-3">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="News Search Engine" ng-model="input">
               <span class="input-group-btn">
-              <button class="btn btn-default btn-primary" type="button" ng-click="newsAPI()">Let's Go</button>
+              <button class="btn btn-default btn-primary" type="submit" ng-click="newsAPI()">Let's Go</button>
               </span>
             </div><!-- /input-group -->
           </div><!-- /.col-lg-6 -->
-          <img class="hero-image" src="http://logonoid.com/images/daily-news-logo.png">
+          <br>
+          
 
-          </section>
-        </div>
+      </div>
     </div>
   </div>
-
-
 
 
 
@@ -63,12 +61,12 @@
         <div ng-repeat="article in articles track by $index">
           <div class="clearfix" ng-if="$index % 3 == 0"></div>
             <div class="col-md-4">
-              <div class="panel panel-default">
+              <div class="panel panel-primary">
                 <div class="panel-heading">
                   <h4>{{article.section}} {{article.subsection}} Section
                   <a href=""> 
-                   <i class="fa fa-star" aria-hidden="true" ng-click="addToFavorite($index)"></i>
-                  </a>
+                   <i class="fa fa-star" tabindex="1" aria-hidden="true" ng-click="addToFavorite($index)"></i>
+                    </a>
                   </h4>
                 </div>
                 <div class="panel-body">
@@ -83,10 +81,10 @@
       </div>
 
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
   <script src="js/services/factory.js"></script>
   <script src="js/controllers/mainController.js"></script>
-  <script type="text/javascript" src="navbar.js"></script>
+ 
 
 
 
