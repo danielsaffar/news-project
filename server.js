@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 
  mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/favorite');
+mongoose.connect(process.env.MONGOLAB_AMBER_URI ||'mongodb://localhost/rereddit-final');
 
 var Article = require("./articleModel");
 
@@ -61,4 +61,4 @@ app.delete('/favorite/:id', function (req, res) {
 
 
 
-app.listen(8000);
+app.listen(process.env.PORT || '4000');
