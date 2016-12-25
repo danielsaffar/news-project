@@ -31,7 +31,7 @@
    <h1 style='text-align:center'>My Favorite Articles</h1>
    <br>
 
-      <div class="row">
+      <div class="row" ng-cloak>
 
         <div ng-repeat="article in articles track by $index">
           <div class="clearfix" ng-if="$index % 3 == 0"></div>

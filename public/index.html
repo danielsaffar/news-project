@@ -32,12 +32,15 @@
                   <li ><a href="favorite.html">My Favorites</a></li>
                   <li><a href="https://weather.com/" target="_blank">Weather Channel</a></li>
                   <li><a href="http://www.breakingnews.com/" target="_blank">Breaking News</a></li>
-                </ul>
-          
+                </ul>          
           </div>
             </nav>
+
+          <br>
+          <br>
+         
           <img class="hero-image" src="http://orig14.deviantart.net/375b/f/2016/105/8/b/daily_planet_logo_1932_prototype_by_noahlc-d9z1kuk.png"><br>
-          
+          <br>        
           <div class="col-md-6 col-md-offset-3">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="News Search Engine" ng-model="input">
@@ -46,8 +49,6 @@
               </span>
             </div><!-- /input-group -->
           </div><!-- /.col-lg-6 -->
-          <br>
-          
 
       </div>
     </div>
@@ -57,7 +58,7 @@
 
 
 
-      <div class="row">
+      <div class="row" ng-cloak>
         <div ng-repeat="article in articles track by $index">
           <div class="clearfix" ng-if="$index % 3 == 0"></div>
             <div class="col-md-4">
